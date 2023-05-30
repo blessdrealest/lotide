@@ -45,11 +45,21 @@ const eqObjects = (object1, object2) => {
   }
 
   for (const key of keys1) {
-    if (Object1[key] !== object2[key]) {
+    const value1 = object1[key];
+    const value2 = object2[key];
+
+    if (Array.isArray(value1) && Array.isArray(value2)) {
+      if (!eqArrays(value1, value2)) {
+        return false;
+      }
+    } else if (typeof value1 === 'object' && typeof value2 === 'object') {
+      if (!eqObjects(value1, value2)) {
+        return false;
+      }
+    } else if (value1 !== value2){
       return false;
     }
   }
-
-
-return true;
-};
+    
+    return true;
+  };
