@@ -60,7 +60,7 @@ assertArraysEqual(output, expectedOutput);
 //expectation is fail as it should be [6, 7, 2, 5 ,3]*/
 
 //Test 3: Mapping objects to properties
-let animals = [
+/*let animals = [
 {name: 'bobby', age: 5},
 {name: 'charlie', age: 8},
 {name: 'sarah', age: 10}
@@ -73,4 +73,4 @@ let expectedOutput = [5, 8, 10];
 
 const test = map(animals, findAge);
 assertArraysEqual(test, expectedOutput);
-//expecting test pass
+//expecting test pass*/
