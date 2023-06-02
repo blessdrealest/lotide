@@ -3,11 +3,11 @@ const takeUntil = function(array, callback) {
 //continue until cb returns truthy value
 //cb should only have 1 value; item in array
   const result = [];
-  for (let i = 0; i < array.length; i++) {
-    if (callback(array[i])) {//check to see if callback func returns true value for array[i]
+  for (let val of array) {
+    if (callback(val)) {//check to see if callback func returns true value for array[i]
       return result;
     }
-    result.push(array[i]);
+    result.push(val);
   }
   return result;
 };
