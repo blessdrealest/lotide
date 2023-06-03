@@ -39,3 +39,12 @@ const eqArrays = function(arr1, arr2) {
   return true;
   // this will conirm that all elements are the same if true
 }
+
+//tests
+//test 1- takeUntil we reach even number
+const array1 = [1, 5, 9, 3, 2, 6, 10];
+const callback1 = (val) => {
+  return val % 2 === 0;
+};
+const result1 = takeUntil(array1, callback1);
+assertArraysEqual(result1, [1, 5, 9, 3]);
