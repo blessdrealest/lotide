@@ -1,26 +1,26 @@
-// Test/Assertion Functions
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
+// // Test/Assertion Functions
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
 
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) { //this will check to see that the 2 arrays have the same elements
-      return false;
-    }
-  }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) { //this will check to see that the 2 arrays have the same elements
+//       return false;
+//     }
+//   }
 
-  return true;
-  // this will conirm that all elements are the same if true
-}
+//   return true;
+//   // this will conirm that all elements are the same if true
+// }
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2))  {
-    console.log(`🙂 Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`😞Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
+// const assertArraysEqual = function(arr1, arr2) {
+//   if (eqArrays(arr1, arr2))  {
+//     console.log(`🙂 Assertion Passed: ${arr1} === ${arr2}`);
+//   } else {
+//     console.log(`😞Assertion Failed: ${arr1} !== ${arr2}`);
+//   }
+// };
 
 //Actual Function
 const middle = function(array) {
@@ -39,17 +39,18 @@ const middle = function(array) {
   return middle; //returns empty middle if middle is <= 2
 }
 
+module.exports = middle;
 
 //Test Code
 //arrays with one or two elements. expecting no middle
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
+// assertArraysEqual(middle([1]), []);
+// assertArraysEqual(middle([1, 2]), []);
 
-//arrays with odd number of elements. expecting single middle element
-assertArraysEqual(middle([1, 2, 3]), [2]); //answer should be [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); //answer should be [3]
+// //arrays with odd number of elements. expecting single middle element
+// assertArraysEqual(middle([1, 2, 3]), [2]); //answer should be [2]
+// assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); //answer should be [3]
 
-//even number arrays. the 2 middle numbers are expected
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); //answer should be [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); //answer should be [3, 4]
+// //even number arrays. the 2 middle numbers are expected
+// assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); //answer should be [2, 3]
+// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); //answer should be [3, 4]
 
