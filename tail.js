@@ -6,10 +6,3 @@ const tail = function(array) {
 };
 
 module.exports = tail;
-
-
-
-//Test case
-//const words = ["yo yo", "Lighthouse", "Labs"];
-//console.log(tail(words));
-//assertEqual(words.length, 3); //original array should have 3 elements

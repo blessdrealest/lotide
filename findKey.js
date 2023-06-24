@@ -1,4 +1,3 @@
-//cb=callback
 const findKey = (obj, cb) => {
   for (let key in obj) {
     if (cb(obj[key])) {
@@ -8,23 +7,5 @@ const findKey = (obj, cb) => {
   return undefined;
 }
 
-
-
-
-
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected)  {
-    console.log(`🙂 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😞Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-//test case #1
-
-
-
-
-//test case #2
+module.exports = findKey;
 

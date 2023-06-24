@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@blessingdiji/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide library completed by blessing diji",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/blessdrealest/lotide.git"
   },
-  "author": "",
+  "author": "blessingdiji",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/blessdrealest/lotide/issues"
