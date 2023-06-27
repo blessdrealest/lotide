@@ -2,7 +2,7 @@
   "name": "@blessingdiji/lotide",
   "version": "1.0.0",
   "description": "lotide library completed by blessing diji",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
